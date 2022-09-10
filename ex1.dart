@@ -5,18 +5,17 @@ void main() {
    sum = sum + num;
  }
  print(sum);
- print(grade(66));
+ print(gradeImproved(80));
  print(getSum([1,1,1,1]));
 }
-
-String grade(int range){
-  if (range >= 90 && 100 range <= ){
+String gradeImproved(int range){
+  if (range >= 90){
     return "A";
-  }else if (range <= 89 && range >= 80){
+  }else if (range >= 80){
     return "B";
-  }else if (range <= 79 && range >= 70){
+  }else if (range >= 70){
     return "C";
-  }else if (range <= 69 && range >= 60){
+  }else if (range >= 60){
     return "D";
   }else if (range == 0 || range <= 59){
     return "F";
@@ -24,7 +23,6 @@ String grade(int range){
     return "no grade for you";
   }
 }
-
 int getSum(List<int> list){
   var sum = 0;
  for(var num in list){
